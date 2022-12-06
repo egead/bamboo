@@ -14,4 +14,4 @@ Analysis of Chinese Stocks with Pandas
 * **Stock_Prices** -> Columns: TimeStamp, Price (StockName (Starts with SSE))
 * **Resampled_Data** -> Data resampled in Mean_TimeWindows.ipynb. using 1 min time windows. Resamp_5Mins and Resamp_10Mins are resampled the same way for 5 and 10 min time windows. 
 * **LastResamp_[1/5/10]Mins** -> Data resampled in Last_TimeWindows.ipynb 
-* **Concat_DFs **-> Concatenated Stock_Prices folders by day
+* **Concat_DFs** -> Concatenated Stock_Prices folders by day
