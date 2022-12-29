@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def crosscorr(s1, s2, lag=0):
     """ Lag-N cross correlation. 
@@ -81,4 +83,23 @@ def timelagcorrM(df1,lag=0):
     dataArr=np.reshape(dataArr, (len(df1.columns),len(df1.columns)))
     dfcorr =pd.DataFrame(data=dataArr,columns=cols,index=idx)
     print(np.corrcoef(df1["SSE_600370"],df2["SSE_600200"])[0,1])
-    return df1,df2#dfcorr
+    return dfcorr #Return to this function in future it does not work properly yet
+
+def laggedcorr(df,lag=0):
+    df_copy = df.rolling(lag).corr(pairwise=True).dropna().reset_index()
+    df_copy = df_copy.loc[df_copy["level_0"]==str(lag)]
+    df_copy.drop("level_0",axis=1,inplace=True)
+    df_copy.set_index("level_1",inplace=True)
+    return df_copy
+
+def laggedheatmap(df):
+    f, ax = plt.subplots(figsize=(12, 6))
+    heatmap = sns.heatmap(df,
+                    cmap = "OrRd",
+                      annot = False,
+                      )
+
+    sns.set_style({'xtick.bottom': True}, {'ytick.left': True})
+
+    
+    
