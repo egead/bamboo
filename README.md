@@ -4,6 +4,7 @@ Analysis of Chinese Stocks with Pandas
 ### Index 
 
 * **corrfuncs.py** -> correlation functions 
+* **RollingCorr.ipynb** -> Using rolling windows to do the same thing as in TimeLagCorr.ipynb but with rolling 
 * **TimeLagCorr.ipynb** -> Notebook about how some of the functions on corrfuncs.py work and derived. Basic testing of timelagcorr function
 * **Mean_TimeWindows.ipynb** -> Notebook that resamples data on 1, 5 and 10 minute timewindows using .mean() (ie. Takes the mean value when resampling)
 * **Last_TimeWindows.ipynb** -> Just like Mean_TimeWindows.ipynb but takes the last value on the given time window. 
