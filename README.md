@@ -2,6 +2,8 @@
 
 Analysis of Chinese Stocks with Pandas 🐼
 
+![Bamboo Logo](/bamboo/bamboo1.jpg)
+
 ### Index 
 
 * **[corrfuncs.py](corrfuncs.py)** : correlation functions 
