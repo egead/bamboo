@@ -1,8 +1,7 @@
 # Bamboo 🎍
 
 Analysis of Chinese Stocks with Pandas 🐼
-
-![Bamboo Logo](bamboo1.jpg)
+<img src="bamboo1.jpg" alt="bamboologo" width="400" height="300">
 
 ### Index 
 
