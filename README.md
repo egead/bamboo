@@ -2,7 +2,7 @@
 
 Analysis of Chinese Stocks with Pandas 🐼
 
-<img src="bamboo1.jpg" alt="bamboologo" width="80" height="95">
+<img src="bamboo1.jpg" alt="bamboologo" width="80" height="80">
 
 ### Index 
 
