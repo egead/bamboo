@@ -19,7 +19,7 @@ Analysis of Chinese Stocks with Pandas 🐼
 * **[Resampled_Data](Resampled_Data)** : Data resampled in Mean_TimeWindows.ipynb. using 1 min time windows. Resamp_5Mins and Resamp_10Mins are resampled the same way for 5 and 10 min time windows. 
 * **[LastResamp_1Mins](LastResamp_1Mins)**, **[LastResamp_5Mins](LastResamp_5Mins)**, **[LastResamp_10Mins](LastResamp_10Mins)** -> Data resampled in Last_TimeWindows.ipynb 
 * **[Concat_DFs](Concat_DFs)** : Concatenated Stock_Prices folders by day
-* **[Archive](Archive)** : Old files that are no longer relevant
+* **[Archive](Archive)** : Old files that are no longer relevant, ones explaining how code works, or freestyle experimentation
 
 #### Scripts
 
