@@ -6,25 +6,26 @@ Analysis of Chinese Stocks with Pandas 🐼
 
 ### Index 
 
+#### Notebooks
 
-* **[RollingCorr.ipynb](RollingCorr.ipynb)** : Using rolling windows to do the same thing as in TimeLagCorr.ipynb but with rolling 
+* **[RollingCorr.ipynb](RollingCorr.ipynb)** : Using rolling windows to do the same thing as in TimeLagCorr.ipynb but with rolling
+* **[VWAP_Analysis.ipynb](VWAP_Analysis.ipynb)** : Demonstrating vwap plot functions from [bamboo_plots.py](bamboo_plots.py) and toying with data (in progress)
+* **[EWMA.ipynb](EWMA.ipynb)**: Using plot functions from [bamboo_plots.py](bamboo_plots.py) to choose an $\alpha$ value, and more (in progress)
+* **[MeanTWs.ipynb](MeanTWs.ipynb)** : Notebook that resamples data on 1, 5 and 10 minute timewindows using .mean() (ie. Takes the mean value when resampling)
+* **[LastTWs.ipynb](LastTWs.ipynb)** : Just like [MeanTWs.ipynb](MeanTWs.ipynb) but takes the last value on the given time window. 
 
-
-
-#### Folders
-* **[Archive](Archive)** : Archived files that are not in active use.
-        * **[corrfuncs.py](corrfuncs.py)** : correlation functions
-        * * **[Correlation_Matrix.ipynb](Correlation_Matrix.ipynb)** : An old notebook used for experimenting with both resampling and an old version of timelagcorr function. Uploaded for archive purposes.
-        * * **[TimeLagCorr.ipynb](TimeLagCorr.ipynb)** : Notebook about how some of the functions on corrfuncs.py work and derived. Basic testing of timelagcorr function
-        * **[Mean_TimeWindows.ipynb](Mean_TimeWindows.ipynb)** : Notebook that resamples data on 1, 5 and 10 minute timewindows using .mean() (ie. Takes the mean value when resampling)
-        * **[Last_TimeWindows.ipynb](Last_TimeWindows.ipynb)** : Just like Mean_TimeWindows.ipynb but takes the last value on the given time window. 
-
-* **[Stock_Prices](Stock_Prices)** : Columns: TimeStamp, Price (StockName (Starts with SSE))
-* **[RESAMPS](RESAMPS)** : Data resampled in Mean_TimeWindows.ipynb. using 1 min time windows. Resamp_5Mins and Resamp_10Mins are resampled the same way for 5 and 10 min time windows. 
-* **[LastResamp_1Mins](LastResamp_1Mins)**, **[LastResamp_5Mins](LastResamp_5Mins)**, **[LastResamp_10Mins](LastResamp_10Mins)** -> Data resampled in Last_TimeWindows.ipynb 
-* **[Concat_DFs](Concat_DFs)** : Concatenated Stock_Prices folders by day
-* **[Archive](Archive)** : Old files that are no longer relevant, ones explaining how code works, or freestyle experimentation
-
+#### Modules
+* **[bamboo_utils.py](bamboo_utils.py)**: Random functions. Better organization needed in the future.
+* **[bamboo_plots.py](bamboo_plots.py)**: Plotting functions.
+  
 #### Scripts
 
-* **[save_vwaps.py](save_vwaps.py)** : python script to calculate and add vwap values as a column to dataframes
+* **[save_vwaps.py](save_vwaps.py)** : calculates and add vwap values as a column to dataframes
+* **[ltpscript.py](ltpscript.py)**: saves ltp columns as .csv files
+
+#### Folders
+* **[Archive](Archive)** : Old files that are no longer relevant, ones explaining how code works, or freestyle experimentation
+* **[Stock_Prices](Stock_Prices)** : Columns: TimeStamp, Price (StockName (Starts with SSE))
+* **[RESAMPS](RESAMPS)** : Data resampled in Mean_TimeWindows.ipynb. using 1 min time windows. Resamp_5Mins and Resamp_10Mins are resampled the same way for 5 and 10 min time windows. Also the vwaps folder.
+* **[Concat_DFs](Concat_DFs)** : Concatenated [Stock_Prices](Stock_Prices) folders by day
+
